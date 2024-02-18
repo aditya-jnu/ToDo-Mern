@@ -1,13 +1,101 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin:0; padding:0; box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input{
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    margin: 0.5rem;
 }
+textarea{
+    padding: 0.25rem;
+    border: none;
+    border-radius: 0.25rem;
+    margin: 0.5rem;
+}
+
+
+.App{
+    background-color:rgba(0, 0, 0, 0.756);
+    height: 100vh;
+}
+.mainApp{
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#mainApp1{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+#mainApp2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+}
+#btn1{
+    border: none;
+    background-color: rgb(238, 238, 10);
+    cursor: pointer;
+    border-radius: 0.25rem;
+    width: 15vw;
+    padding: 1.5vh;
+}
+#head{
+    font-size: 8vh;
+    font-weight: 600;
+}
+
+
+.displaybox{
+   display: flex;
+   flex-direction: column;
+   gap: 1vh;
+}
+
+
+.toDo{
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+    background-color: rgba(0, 0, 0, 0.363);
+    padding: 1rem;
+    border-radius: 0.5vw;
+}
+.icons{
+    display: flex;
+    gap: 1vw;
+}
+
+
+.container form{
+    display: flex;
+    align-items: center; 
+}
+#tex{
+    width: 15vw;
+    padding: 1vh;
+    height: 6vh;
+    border: none;
+}
+#btn2{
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    width: 5vw;
+    padding: 1vh;
+}
+
+.checked{
+   text-decoration: line-through;
+   text-decoration-color:red;
+}
+
